@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>图片转换 | ZeroImage</title>
+<style>
+body {
+  background-color:#fafcfa;
+  padding:0;
+  margin:0;
+  color:#333;
+  font-size:16px;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft YaHei", STHeiti;
+}
+.wrapper {
+  margin:0 auto;
+  width:60%;
+  margin-top:100px;
+}
+.main {
+  background-color:#fff;
+  border:1px solid #e9e9e9;
+  border-top: 3px solid #9d9d3b;
+  padding:40px;
+  padding-bottom:25px;
+  box-shadow: 0 10px 6px -6px #bbb;
+  -moz-box-shadow: 0 10px 6px -6px #bbb;
+  -webkit-box-shadow: 0 10px 6px -6px #bbb;
+}
+.title {
+  text-align:center;
+  font-size:26px;
+  color:#8c8c2a;
+}
+.content {
+  border-top:1px solid #ddd;
+  margin-top: 20px;
+  padding: 25px 20px;
+}
+.footer {
+  border-top:1px solid #ddd;
+  padding-top:20px;
+  font-size:14px;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB";
+  text-align: right;
+  color: #999;
+}
+input {
+  font-size:16px;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft YaHei", STHeiti;
+}
+all {
+  color: #8E8E8E;
+  font-size:75%;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft YaHei", STHeiti;
+}
+right {
+  float:right;
+}
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="title">上传图片</div>
+            <div class="content">
+              <div align="right">
+              <form action="/img2html.php" method="post" enctype="multipart/form-data">
+                <!--accept="image/gif,image/jpeg,image/png,image/webp,image/bmp,.wbmp"--->
+                <input style="float:left;" type="file" name="img" accept="image/gif,image/jpeg,image/png,.wbmp,.webp,.xbm,.gd,.gd2" required>
+                <input type="submit" name="submit" value="Submit"/>
+              </form>
+              </div>
+          </div>
+      </div>
+      <br>
+      <all>
+        <script type="text/javascript">
+          copyright=new Date();//取得当前的日期
+          year=copyright.getFullYear();//取得当前的年份
+          document.write('©' + year);//year为自动更新的年份
+        </script>
+        <noscript>
+          ©2017
+        </noscript>
+        ZeroImg. All rights reserved.<right>Design by <a href="https://www.appnode.com">Appnode</a></right>
+      </all>
+    </div>
+</body>
+</html>

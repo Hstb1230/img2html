@@ -1,13 +1,15 @@
 # img2html
-用PHP代码实现图片转HTML网页
+Through the PHP code to convert the image into the HTML page
 
-说明
----
-* PHP代码是针对上传文件的情况写的。用于其他情况时，请去掉前几行的判断代码，并修改```$path```的值
-* 需要开启GD扩展，而且要设置```short_open_tag(支持 PHP 代码的短开始标签)```
-* 建议```PHP ≥ 5.5```，否则会不支持某些格式图片(```webp```，```bmp```等)
-* 处理```BMP```图片需要```PHP 7.2```以上版本，因制作时使用PHP 5.6，未添加相关代码
+[中文说明](https://github.com/Hstb1230/img2html/wiki)
 
-测试
+Description
 ---
-* https://img.1sls.cn/img2html
+* The PHP code is written for uploading file.If you want to use in other scenes，please delete the first few lines code about judge upload files，and modify the value of ```$path```
+* You need to open theGD extension，and set the value of```short_open_tag```
+* You'd better use PHP version greater than 5.5 version, otherwise you do not support some format images(```webp```，```bmp```and so on)
+* If you want to process bmp images, you must use a PHP version greater than or equal to ```7.2```.But I did not add the relevant code because I used PHP 5.6
+
+Demo
+---
+* https://img.1sls.cn/img2html/en
